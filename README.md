@@ -13,5 +13,5 @@ Making Travel website using HTML CSS and JS without any frameworks or library
 ### Primary features:
 
 * Made it from plain HTML, CSS and JavaScript
-* Resposive web application
+* Responsive web application
 ------------------------------------------------------------------------------
