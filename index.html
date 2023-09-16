@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Travelopia Assignment</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header role="img" aria-label="travelopia assignment favourite beach destination">
+      <div class="nav-bar">
+          <div class="logo">
+              <a href="#"><img src="./images/logo.png" alt="Travelopia assignment logo"></img></a>
+          </div>
+          <ul class="nav-option" id="navigationTop">
+              <li class="active">
+                  <a href="#">Home</a>
+              </li>
+              <li>
+                  <a href="#">About Us</a>
+              </li>
+              <li>
+                  <a href="#">Our Brands</a>
+              </li>
+              <li>
+                  <a href="#">Sustainability</a>
+              </li>
+              <li>
+                  <a href="#">Work with us</a>
+              </li>
+              <li class="menu-icon">
+                  <a href="javascript:void(0);" onclick="menuOption()">
+                      <i class="fa fa-bars"></i>
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div class="container">
+        <div class="title">
+            <h1>Welcome to Travelopia</h1>
+        </div>
+        <div class="button-block">
+            <a id="pop-btn" href="#" class="btn">
+                <span class="full__text">Click here to know more</span>
+                <span class="half__text">Click here</span>
+            </a>
+        </div>
+      </div>
+    </header>
+    <section>
+        <div class="section-title">
+            <h2>Trending destinations</h2>
+            <p>Most popular choices for travellers from India</p>
+        </div>
+
+        <div class="dest-block">
+            <div class="dest-tile pos__left">
+                <a href="#">
+                    <img src="./images/delhi.png" alt="Travelopia assignment Delhi image"></img>
+                </a>
+                <div class="tile-text">
+                    <h3>Delhi</h3>
+                    <p>Dynamic and diverse metropolis in India known for its historical landmarks, bustling markets, and vibrant cultural scene.</p>
+                </div>
+            </div>
+            <div class="dest-tile pos__right">
+                <a href="#">
+                    <img src="./images/banglore.png" alt="Travelopia assignment Banglore image"></img>
+                </a>
+                <div class="tile-text">
+                    <h3>Banglore</h3>
+                    <p>Cosmopolitan city in India known as the "Silicon Valley" for its thriving IT industry, pleasant climate, and vibrant nightlife.</p>
+                </div>
+            </div>
+            <div class="dest-tile pos__left">
+                <a href="#">
+                    <img src="./images/chennai.png" alt="Travelopia assignment Chennai image"></img>
+                </a>
+                <div class="tile-text">
+                    <h3>Chennai</h3>
+                    <p>Coastal city in southern India known for its rich cultural heritage, beautiful beaches, and thriving film industry.</p>
+                </div>
+            </div>
+            <div class="dest-tile pos__right">
+                <a href="#">
+                    <img src="./images/goa.png" alt="Travelopia assignment Goa image"></img>
+                </a>
+                <div class="tile-text">
+                    <h3>Goa</h3>
+                    <p>Quaint and picturesque coastal state in India famous for its stunning beaches, vibrant nightlife, colonial architecture, and diverse cuisine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class='footer-content'>
+            <h3>Travelopia Assignment</h3>
+            <p>Copyright © Travelopia Assignment 2023</p>
+            <ul class='socials'>
+                <li><a href='#'><i class='fa fa-facebook'></i></a></li>
+                <li><a href='#'><i class='fa fa-twitter'></i></a></li>
+                <li><a href='#'><i class='fa fa-google-plus'></i></a></li>
+                <li><a href='#'><i class='fa fa-youtube'></i></a></li>
+                <li><a href='#'><i class='fa fa-linkedin-square'></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="popup" id="pop-modal">
+        <button id="close-btn" class="close-btn">&times;</button>
+        <h2>Hello world!</h2>
+        <p>We are travel experts. Our award-winning travel brands create unique experiences for our guests around the world. From wildlife encounters to polar expeditions, from cultural tours to yachting adventures, our business is not just about showing people the world, but designing new ways to experience it.</p>
+    </div>
+
+<script type="text/javascript">
+
+    const modal = document.getElementById('pop-modal'),
+        btn = document.getElementById('pop-btn'),
+        close = document.getElementById('close-btn');
+
+    btn.onclick = function(){
+        modal.style.display = 'block';
+    }
+
+    close.onclick = function() {
+        modal.style.display = 'none';
+    }
+    function menuOption() {
+        var navOption = document.getElementById('navigationTop');
+        if (navOption.className === 'nav-option') {
+            navOption.className += ' responsive';
+        } else {
+            navOption.className = 'nav-option';
+        }
+    }
+</script>
+</body>
+</html>
