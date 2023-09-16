@@ -120,15 +120,15 @@
         btn = document.getElementById('pop-btn'),
         close = document.getElementById('close-btn');
 
-    btn.onclick = function(){
+    btn.onclick = () => {
         modal.style.display = 'block';
     }
 
-    close.onclick = function() {
+    close.onclick = () => {
         modal.style.display = 'none';
     }
     function menuOption() {
-        var navOption = document.getElementById('navigationTop');
+        const navOption = document.getElementById('navigationTop');
         if (navOption.className === 'nav-option') {
             navOption.className += ' responsive';
         } else {
